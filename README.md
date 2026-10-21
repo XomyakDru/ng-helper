@@ -15,7 +15,7 @@
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-4f6bff?labelColor=0b1416)
 ![Безкоштовно](https://img.shields.io/badge/ціна-безкоштовно-4ee39b?labelColor=0b1416)
 
-**[🌐 Сайт проєкту](https://xomyakdru.github.io/NG-helper/)** · **[📦 Усі версії](https://github.com/XomyakDru/NG-helper/releases)**
+**[🌐 Сайт проєкту](https://xomyakdru.github.io/ng-helper/)** · **[📦 Усі версії](https://github.com/XomyakDru/NG-helper/releases)**
 
 </div>
 
