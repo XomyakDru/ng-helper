@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NG Helper — помічник для NG RP (GTA 5): закони, правила й ШІ поверх гри</title>
+  <meta name="description" content="NG Helper — безкоштовна програма для гравців NG RP (GTA 5 RP Україна): уся законодавча база й правила сервера, миттєвий пошук статей, ШІ-відповіді з посиланнями, голосовий ввід і вікно поверх гри. Завантажити для Windows.">
+  <meta name="keywords" content="NG Helper, NG RP, NG GTA 5, ng-gta5, GTA 5 RP Україна, NG RP закони, правила NG RP, кримінальний кодекс NG, оверлей GTA 5, помічник NG">
+  <meta name="theme-color" content="#05090b">
+  <link rel="canonical" href="https://xomyakdru.github.io/NG-helper/">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NG Helper — закони, правила й ШІ поверх гри для NG RP">
+  <meta property="og:description" content="Знайди статтю за секунду, спитай ШІ своїми словами, тримай вікно поверх GTA. Безкоштовно для Windows.">
+  <meta property="og:url" content="https://xomyakdru.github.io/NG-helper/">
+  <meta property="og:image" content="https://xomyakdru.github.io/NG-helper/assets/og.jpg">
+  <meta property="og:locale" content="uk_UA">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"NG Helper","operatingSystem":"Windows 10, Windows 11","applicationCategory":"UtilitiesApplication","description":"Помічник для гравців NG RP (GTA 5): законодавча база й правила сервера, пошук, ШІ-відповіді, голосовий ввід, вікно поверх гри.","offers":{"@type":"Offer","price":"0","priceCurrency":"UAH"},"downloadUrl":"https://github.com/XomyakDru/NG-helper/releases/latest/download/NG-Helper-Setup.exe","inLanguage":"uk","url":"https://xomyakdru.github.io/NG-helper/"}
+  </script>
+  <style>
+    :root { --bg: #04080a; --teal: #22dccd; --teal2: #86f3ea; --gold: #ffd36b; --text: #e9f5f4; --muted: #8fa9a7; --line: rgba(134, 243, 234, .12); --ease: cubic-bezier(.2, .8, .2, 1); color-scheme: dark; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    .bg { position: fixed; inset: 0; z-index: -1; pointer-events: none;
+      background: radial-gradient(50% 40% at 15% 0%, rgba(34, 220, 205, .2), transparent 70%), radial-gradient(40% 40% at 90% 25%, rgba(80, 110, 255, .16), transparent 70%), radial-gradient(45% 35% at 50% 100%, rgba(180, 80, 255, .1), transparent 70%); }
+    .bg::after { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(134, 243, 234, .035) 1px, transparent 1px), linear-gradient(90deg, rgba(134, 243, 234, .035) 1px, transparent 1px); background-size: 48px 48px; -webkit-mask: radial-gradient(ellipse at 50% 0%, #000 20%, transparent 75%); mask: radial-gradient(ellipse at 50% 0%, #000 20%, transparent 75%); }
+    .wrap { width: min(1160px, calc(100% - 32px)); margin: 0 auto; }
+    nav { position: sticky; top: 0; z-index: 10; background: rgba(4, 8, 10, .82); border-bottom: 1px solid var(--line); }
+    nav .wrap { display: flex; align-items: center; gap: 18px; height: 64px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: 2px; }
+    .brand img { height: 26px; filter: drop-shadow(0 0 10px rgba(34, 220, 205, .6)); }
+    .brand em { font-style: normal; color: var(--teal); }
+    nav .links { margin-left: auto; display: flex; gap: 22px; font-size: 14.5px; color: var(--muted); }
+    nav .links a:hover { color: var(--text); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 52px; padding: 0 26px; border-radius: 16px; font-weight: 800; font-size: 16.5px; border: 1px solid rgba(255, 255, 255, .1); background: rgba(255, 255, 255, .06); transition: transform .2s var(--ease), box-shadow .2s, background .2s; }
+    .btn:hover { transform: translateY(-2px); background: rgba(255, 255, 255, .1); }
+    .btn.pri { color: #022421; border: 0; background: linear-gradient(135deg, var(--teal2), var(--teal)); box-shadow: 0 12px 34px rgba(34, 220, 205, .35); }
+    .btn.pri:hover { box-shadow: 0 16px 44px rgba(34, 220, 205, .5); }
+    .btn svg { width: 20px; height: 20px; }
+    nav .btn { height: 40px; padding: 0 16px; font-size: 14px; border-radius: 12px; }
+    .hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: 40px; align-items: center; padding: 70px 0 60px; }
+    .kick { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 700; letter-spacing: .5px; color: var(--teal2); background: rgba(34, 220, 205, .1); border: 1px solid rgba(134, 243, 234, .25); }
+    .kick i { width: 8px; height: 8px; border-radius: 50%; background: #4ee39b; box-shadow: 0 0 10px #4ee39b; }
+    h1 { margin: 18px 0 14px; font-size: clamp(40px, 6vw, 68px); line-height: 1.02; font-weight: 900; letter-spacing: -1.5px; }
+    h1 span { background: linear-gradient(120deg, #fff 10%, var(--teal2) 50%, #8fa8ff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .lead { font-size: 19px; color: #b6cdcb; max-width: 560px; }
+    .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .meta { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 18px; font-size: 13.5px; color: var(--muted); }
+    .meta b { color: var(--text); }
+    .stage { position: relative; height: 560px; }
+    .stage img { position: absolute; width: 270px; border-radius: 22px; box-shadow: 0 30px 70px rgba(0, 0, 0, .65), 0 0 0 1px rgba(134, 243, 234, .18); transition: transform .5s var(--ease); }
+    .stage .s1 { left: 0; top: 70px; transform: rotate(-7deg); opacity: .8; }
+    .stage .s2 { left: 50%; top: 0; z-index: 2; width: 300px; transform: translateX(-50%); box-shadow: 0 40px 90px rgba(0, 0, 0, .7), 0 0 60px rgba(34, 220, 205, .25), 0 0 0 1px rgba(134, 243, 234, .35); }
+    .stage .s3 { right: 0; top: 90px; transform: rotate(7deg); opacity: .8; }
+    .stage:hover .s1 { transform: rotate(-10deg) translateX(-16px); }
+    .stage:hover .s3 { transform: rotate(10deg) translateX(16px); }
+    section { padding: 70px 0; }
+    .sh { text-align: center; margin-bottom: 40px; }
+    .sh small { font-size: 13px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; color: var(--teal2); }
+    h2 { margin: 8px 0 10px; font-size: clamp(30px, 4vw, 44px); line-height: 1.1; letter-spacing: -.5px; }
+    .sh p { margin: 0 auto; max-width: 640px; color: var(--muted); }
+    .feats { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+    .f { --h: 174; position: relative; overflow: hidden; padding: 24px 22px; border-radius: 22px; background: radial-gradient(120% 120% at 100% 0%, hsla(var(--h), 85%, 55%, .16), transparent 55%), rgba(14, 26, 30, .8); border: 1px solid rgba(134, 243, 234, .1); transition: transform .25s var(--ease), border-color .25s, box-shadow .25s; }
+    .f:hover { transform: translateY(-4px); border-color: hsla(var(--h), 85%, 62%, .45); box-shadow: 0 20px 44px rgba(0, 0, 0, .4), 0 0 34px hsla(var(--h), 85%, 55%, .15); }
+    .f .i { width: 52px; height: 52px; display: grid; place-items: center; border-radius: 16px; font-size: 26px; background: hsla(var(--h), 85%, 55%, .15); box-shadow: inset 0 0 0 1px hsla(var(--h), 85%, 62%, .3); margin-bottom: 16px; }
+    .f b { display: block; font-size: 18px; margin-bottom: 6px; }
+    .f p { margin: 0; color: var(--muted); font-size: 15px; }
+    .ai { display: grid; grid-template-columns: .9fr 1.1fr; gap: 50px; align-items: center; }
+    .ai img { width: 100%; max-width: 380px; border-radius: 22px; box-shadow: 0 30px 70px rgba(0, 0, 0, .6), 0 0 50px rgba(110, 120, 255, .18), 0 0 0 1px rgba(143, 168, 255, .3); justify-self: center; }
+    .verdict { display: grid; gap: 10px; margin-top: 22px; }
+    .verdict div { display: flex; gap: 14px; align-items: flex-start; padding: 14px 16px; border-radius: 16px; background: rgba(14, 26, 30, .8); border: 1px solid var(--line); }
+    .verdict span { flex: none; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 10px; font-size: 18px; background: rgba(34, 220, 205, .12); }
+    .verdict b { display: block; }
+    .verdict small { color: var(--muted); font-size: 14px; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; counter-reset: s; }
+    .step { position: relative; padding: 26px 22px 22px; border-radius: 22px; background: rgba(14, 26, 30, .8); border: 1px solid var(--line); }
+    .step::before { counter-increment: s; content: counter(s); position: absolute; top: -16px; left: 22px; width: 36px; height: 36px; display: grid; place-items: center; border-radius: 12px; font-weight: 900; color: #022421; background: linear-gradient(135deg, var(--teal2), var(--teal)); box-shadow: 0 8px 20px rgba(34, 220, 205, .4); }
+    .step > b { display: block; font-size: 17.5px; margin: 6px 0 6px; }
+    .step p { margin: 0; color: var(--muted); font-size: 15px; }
+    .warn { margin-top: 16px; padding: 16px 18px; border-radius: 16px; font-size: 15px; color: #d9e9e7; background: rgba(255, 211, 107, .07); border: 1px solid rgba(255, 211, 107, .25); }
+    .warn b { color: var(--gold); }
+    .keys { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
+    .key { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 18px; border-radius: 16px; background: rgba(14, 26, 30, .8); border: 1px solid var(--line); }
+    .key span { color: #cfe3e1; }
+    kbd { font: 700 13px/1 "Cascadia Mono", Consolas, monospace; padding: 6px 9px; border-radius: 8px; color: #eafffd; background: rgba(34, 220, 205, .12); border: 1px solid rgba(134, 243, 234, .28); box-shadow: 0 2px 0 rgba(134, 243, 234, .18); white-space: nowrap; }
+    .gal { display: flex; gap: 16px; overflow-x: auto; padding: 10px 4px 24px; scroll-snap-type: x mandatory; }
+    .gal img { flex: none; width: 260px; border-radius: 20px; scroll-snap-align: center; box-shadow: 0 20px 50px rgba(0, 0, 0, .55), 0 0 0 1px rgba(134, 243, 234, .16); }
+    .faq { max-width: 820px; margin: 0 auto; display: grid; gap: 10px; }
+    details { border-radius: 18px; background: rgba(14, 26, 30, .8); border: 1px solid var(--line); transition: border-color .2s; }
+    details[open] { border-color: rgba(134, 243, 234, .35); }
+    summary { list-style: none; cursor: pointer; padding: 18px 22px; font-weight: 700; font-size: 17px; display: flex; justify-content: space-between; gap: 12px; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: '+'; color: var(--teal2); font-size: 22px; line-height: 1; transition: transform .2s; }
+    details[open] summary::after { transform: rotate(45deg); }
+    details p { margin: 0; padding: 0 22px 20px; color: var(--muted); }
+    .final { text-align: center; padding: 60px 26px; border-radius: 30px; background: radial-gradient(80% 140% at 50% 0%, rgba(34, 220, 205, .25), transparent 60%), rgba(10, 22, 26, .9); border: 1px solid rgba(134, 243, 234, .25); }
+    footer { padding: 34px 0 50px; text-align: center; color: var(--muted); font-size: 13.5px; border-top: 1px solid var(--line); margin-top: 60px; }
+    footer a { color: var(--teal2); }
+    .rv { opacity: 0; transform: translateY(18px); transition: opacity .6s var(--ease), transform .6s var(--ease); }
+    .rv.on { opacity: 1; transform: none; }
+    @media (max-width: 900px) {
+      nav .links { display: none; }
+      .hero, .ai { grid-template-columns: 1fr; }
+      .hero { padding-top: 40px; text-align: center; }
+      .lead { margin: 0 auto; }
+      .cta, .meta { justify-content: center; }
+      .stage { height: 440px; }
+      .stage img { width: 200px; }
+      .stage .s2 { width: 230px; }
+      .steps { grid-template-columns: 1fr; gap: 26px; }
+    }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } .rv { opacity: 1; transform: none; } }
+  </style>
+</head>
+<body>
+  <div class="bg"></div>
+  <nav><div class="wrap">
+    <a class="brand" href="#"><img src="assets/logo.svg" alt="">HELPER<em>.</em></a>
+    <div class="links"><a href="#features">Можливості</a><a href="#ai">ШІ</a><a href="#install">Встановлення</a><a href="#keys">Клавіші</a><a href="#faq">Питання</a></div>
+    <a class="btn pri dl" href="https://github.com/XomyakDru/NG-helper/releases/latest/download/NG-Helper-Setup.exe">Завантажити</a>
+  </div></nav>
+
+  <header class="wrap hero">
+    <div>
+      <span class="kick"><i></i>Для гравців NG RP · GTA 5</span>
+      <h1><span>NG Helper</span><br>закони й правила<br>поверх гри</h1>
+      <p class="lead">Знайди статтю за секунду, спитай ШІ своїми словами й тримай вікно поверх GTA — не виходячи з гри. Уся законодавча база й правила сервера завжди актуальні.</p>
+      <div class="cta">
+        <a class="btn pri dl" href="https://github.com/XomyakDru/NG-helper/releases/latest/download/NG-Helper-Setup.exe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Завантажити для Windows</a>
+        <a class="btn" href="#install">Як встановити</a>
+      </div>
+      <div class="meta"><span>Версія <b id="ver">остання</b></span><span id="date"></span><span>Windows 10 / 11</span><span><b>Безкоштовно</b></span><span>Неофіційний фан-проєкт, не повʼязаний з NG</span></div>
+    </div>
+    <div class="stage">
+      <img class="s1" src="assets/shot-rules.webp" alt="Пошук у правилах сервера" width="270" height="386">
+      <img class="s2" src="assets/shot-search.webp" alt="Знайдена стаття з покаранням" width="300" height="429">
+      <img class="s3" src="assets/shot-ai.webp" alt="Питання до ШІ" width="270" height="386">
+    </div>
+  </header>
+
+  <section id="features"><div class="wrap">
+    <div class="sh rv"><small>Можливості</small><h2>Усе, що треба під час гри</h2><p>Без вкладок браузера й пошуку по форуму. Одна клавіша — і потрібна стаття перед очима.</p></div>
+    <div class="feats">
+      <div class="f rv" style="--h:174"><div class="i">⚖️</div><b>Уся законодавча база</b><p>Конституція, кодекси й закони штату NG — підтягуються з сайту сервера самі.</p></div>
+      <div class="f rv" style="--h:30"><div class="i">📜</div><b>Правила сервера</b><p>Загальні правила, держ. організації, крайм, лідери, допити, поставки й рейди.</p></div>
+      <div class="f rv" style="--h:190"><div class="i">⚡</div><b>Миттєвий пошук</b><p>За номером <kbd>1.5 ТК</kbd> або словами — без ШІ, без ліміту, з підсвіткою збігів.</p></div>
+      <div class="f rv" style="--h:250"><div class="i">🤖</div><b>ШІ-юрист</b><p>Опиши ситуацію своїми словами — отримаєш вердикт і посилання на статті.</p></div>
+      <div class="f rv" style="--h:330"><div class="i">🎙</div><b>Голосовий ввід</b><p>Натиснув, сказав — текст уже в полі. Зручно, коли руки на клавіатурі в грі.</p></div>
+      <div class="f rv" style="--h:150"><div class="i">🎮</div><b>Поверх гри</b><p>Вікно закріплюється поверх GTA, кліки проходять крізь нього — гра не втрачає фокус.</p></div>
+      <div class="f rv" style="--h:45"><div class="i">🔔</div><b>Зміни в законах</b><p>Helper сам стежить за сайтом і показує «було → стало» та сповіщення Windows.</p></div>
+      <div class="f rv" style="--h:280"><div class="i">🛡</div><b>Режим стрімера</b><p>OBS і Discord не бачать вікно Helper — на стрімі тільки гра.</p></div>
+    </div>
+  </div></section>
+
+  <section id="ai"><div class="wrap ai">
+    <img class="rv" src="assets/shot-ai.webp" alt="Режим ШІ в NG Helper" width="380" height="543">
+    <div class="rv">
+      <div class="sh" style="text-align:left;margin:0"><small>ШІ-помічник</small><h2>Питаєш як другу — відповідає як юрист</h2><p style="margin:0">ШІ спершу знаходить потрібні статті й пункти, а потім відповідає строго за ними. Жодних вигадок і питань у відповідь.</p></div>
+      <div class="verdict">
+        <div><span>⚖️</span><div><b>Вердикт</b><small>Коротко: можна чи ні, і чим загрожує</small></div></div>
+        <div><span>📜</span><div><b>Правила</b><small>Пункти правил сервера з номерами</small></div></div>
+        <div><span>📕</span><div><b>Закони</b><small>Статті кодексів і законів з посиланнями</small></div></div>
+        <div><span>✅</span><div><b>Що робити</b><small>Конкретні кроки для твоєї ситуації</small></div></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="install"><div class="wrap">
+    <div class="sh rv"><small>Встановлення</small><h2>Три кроки — і готово</h2></div>
+    <div class="steps">
+      <div class="step rv"><b>Завантаж</b><p>Натисни «Завантажити» й запусти <b>NG-Helper-Setup.exe</b>. Встановлення займає кілька секунд.</p></div>
+      <div class="step rv"><b>Запусти</b><p>Закони й правила завантажаться з ng-gta5.com самі — без входу в акаунт і без пароля.</p></div>
+      <div class="step rv"><b>Грай</b><p><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>N</kbd> — показати вікно, <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>P</kbd> — закріпити поверх гри.</p></div>
+    </div>
+    <div class="warn rv"><b>GTA має бути в режимі «У вікні без рамки» (Borderless)</b> — інакше вікно Helper не видно поверх гри. Якщо Windows покаже «Невідомий видавець», натисни «Детальніше → Виконати все одно»: так буває з безкоштовними програмами без платного підпису.</div>
+  </div></section>
+
+  <section id="keys"><div class="wrap">
+    <div class="sh rv"><small>Клавіші</small><h2>Усе з клавіатури</h2><p>Кожну клавішу можна змінити в Налаштування → Клавіші.</p></div>
+    <div class="keys">
+      <div class="key rv"><span>Показати / сховати</span><span><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>N</kbd></span></div>
+      <div class="key rv"><span>Закріпити поверх гри</span><span><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>P</kbd></span></div>
+      <div class="key rv"><span>Закони ↔ Правила</span><span><kbd>Tab</kbd></span></div>
+      <div class="key rv"><span>Пошук ↔ ШІ</span><span><kbd>Shift</kbd> <kbd>Tab</kbd></span></div>
+      <div class="key rv"><span>Сказати голосом</span><span><kbd>Ctrl</kbd> <kbd>Space</kbd></span></div>
+      <div class="key rv"><span>Копіювати статтю з покаранням</span><span><kbd>Ctrl</kbd> <kbd>C</kbd></span></div>
+      <div class="key rv"><span>Моя шпаргалка</span><span><kbd>Ctrl</kbd> <kbd>B</kbd></span></div>
+      <div class="key rv"><span>Історія запитань</span><span><kbd>Ctrl</kbd> <kbd>H</kbd></span></div>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="sh rv"><small>Скріншоти</small><h2>Як це виглядає</h2></div>
+    <div class="gal rv">
+      <img src="assets/shot-home.webp" alt="Головний екран" loading="lazy" width="260" height="371">
+      <img src="assets/shot-search.webp" alt="Знайдена стаття" loading="lazy" width="260" height="371">
+      <img src="assets/shot-rules.webp" alt="Правила сервера" loading="lazy" width="260" height="371">
+      <img src="assets/shot-ai.webp" alt="Режим ШІ" loading="lazy" width="260" height="371">
+      <img src="assets/shot-settings.webp" alt="Налаштування" loading="lazy" width="260" height="371">
+    </div>
+  </div></section>
+
+  <section id="faq"><div class="wrap">
+    <div class="sh rv"><small>Питання</small><h2>Часті питання</h2></div>
+    <div class="faq">
+      <details class="rv"><summary>Це чит? Мене не заблокують?</summary><p>Ні. NG Helper — окрема програма-довідник: вона не втручається в гру, не читає її пам'ять і нічого не змінює в GTA. Це як відкрити сайт із законами, тільки зручніше.</p></details>
+      <details class="rv"><summary>Це безкоштовно?</summary><p>Так. Пошук — без обмежень. ШІ — безкоштовний денний ліміт запитів, він видно в рядку статусу й щодня оновлюється.</p></details>
+      <details class="rv"><summary>Треба входити в акаунт ng-gta5.com?</summary><p>Ні. Helper сам завантажує закони й правила з сайту — без входу, логіна й пароля.</p></details>
+      <details class="rv"><summary>Не видно вікна поверх гри</summary><p>Перемкни GTA в режим «У вікні без рамки» (Borderless). Якщо гаряча клавіша не працює — її могла зайняти інша програма (Discord, NVIDIA, OBS): зміни її в Налаштування → Клавіші.</p></details>
+      <details class="rv"><summary>Як оновлюватися?</summary><p>Нічого робити не треба — Helper сам запропонує оновитися, коли вийде нова версія.</p></details>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="final rv"><h2>Спробуй NG Helper</h2><p style="color:var(--muted);margin:0 0 24px">Безкоштовно для Windows 10 і 11.</p><a class="btn pri dl" href="https://github.com/XomyakDru/NG-helper/releases/latest/download/NG-Helper-Setup.exe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Завантажити NG Helper</a></div>
+  </div></section>
+
+  <footer><div class="wrap">
+    <a href="https://github.com/XomyakDru/NG-helper">GitHub</a> · <a href="https://github.com/XomyakDru/NG-helper/releases">Усі версії</a><br>
+    <b>Неофіційний фанатський проєкт.</b> NG Helper зроблений гравцем для гравців і не має жодного стосунку до адміністрації, розробників чи команди NG RP (ng-gta5.com).<br> GTA V — торгова марка Rockstar Games. Назви сервера й документів належать їхнім власникам.
+  </div></footer>
+
+  <script>
+    // поява блоків при прокрутці
+    const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } }), { threshold: .12 });
+    document.querySelectorAll('.rv').forEach((el) => io.observe(el));
+    // номер останньої версії з GitHub
+    fetch('https://api.github.com/repos/XomyakDru/NG-helper/releases/latest').then((r) => r.ok ? r.json() : null).then((j) => {
+      if (!j || !j.tag_name) return;
+      document.getElementById('ver').textContent = j.tag_name.replace(/^v/, '');
+      const d = new Date(j.published_at);
+      if (!isNaN(d)) document.getElementById('date').textContent = 'оновлено ' + d.toLocaleDateString('uk-UA', { day: 'numeric', month: 'long' });
+      document.querySelectorAll('a.dl').forEach((a) => { a.title = 'NG Helper ' + j.tag_name; });
+    }).catch(() => {});
+  </script>
+</body>
+</html>
