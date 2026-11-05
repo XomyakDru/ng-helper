@@ -8,7 +8,7 @@
 
 Знайди статтю за секунду, спитай ШІ своїми словами, порахуй тюнінг чи підбери снасть, і все це не виходячи з гри.
 
-[![Завантажити](https://img.shields.io/badge/⬇_Завантажити_для_Windows-ff7a1a?style=for-the-badge&labelColor=101010)](https://github.com/XomyakDru/NG-helper/releases/latest/download/NG-Helper-Setup.exe)
+[![Завантажити](https://img.shields.io/badge/⬇_Завантажити_для_Windows-ff7a1a?style=for-the-badge&labelColor=101010)](https://github.com/XomyakDru/NG-helper/releases/latest/download/Richi-Wiki-Setup.exe)
 
 [![Остання версія](https://img.shields.io/github/v/release/XomyakDru/NG-helper?label=версія&color=ff7a1a&labelColor=101010)](https://github.com/XomyakDru/NG-helper/releases/latest)
 [![Завантажень](https://img.shields.io/github/downloads/XomyakDru/NG-helper/total?label=завантажень&color=ffa057&labelColor=101010)](https://github.com/XomyakDru/NG-helper/releases)
@@ -52,7 +52,7 @@
 
 ## 🚀 Встановлення
 
-1. **[Завантаж NG-Helper-Setup.exe](https://github.com/XomyakDru/NG-helper/releases/latest/download/NG-Helper-Setup.exe)** і запусти. Це інсталятор Richi Wiki.
+1. **[Завантаж Richi-Wiki-Setup.exe](https://github.com/XomyakDru/NG-helper/releases/latest/download/Richi-Wiki-Setup.exe)** і запусти. Це інсталятор Richi Wiki.
 2. Готово: закони й правила завантажаться самі, **входити в акаунт не потрібно**.
 
 > **GTA має працювати в режимі «У вікні без рамки» (Borderless)**, інакше вікно не буде видно поверх гри.
